@@ -11,15 +11,15 @@ Use Poiseuille flow equation to simulate the fountain.
 ### Step 1:
 Randomly pick a position within the circumference of the fountain pipe.
 ### Step 2:
-Initilize Vy with $$V_y = V_{max} \times [1-\frac{r}{R}] $$
+Initilize Vy with $V_y = V_{max} \times [1-\frac{r}{R}]$
 while Vmax is a max speed that we manully set, r is the distance from this particle to the center of the fountain, R is the radius of the fountain pipe.
 ### Step 3:
 Initilize Vx, Vz with
 $$V_x=sin(R_1 \times Rand(\frac \alpha 2))\times cos(R_2 \times 2 \times Pi) $$
 $$V_z=sin(R_1 \times Rand(\frac \alpha 2))\times sin(R_2 \times 2 \times Pi) $$
 while R1 and R2 are random numbers between 0 and 1, they are different.
-And $$\alpha$$ is thefountain spray angle.
-Rand ($$\frac \alpha 2$$) means to generate random angle between $$-\frac \alpha 2$$ to $$\frac \alpha 2$$.
+And $\alpha$ is thefountain spray angle.
+Rand ( $\frac \alpha 2$) means to generate ra ndom angle between $-\frac \alpha 2$ to $\frac \alpha 2$.
 ## To genetate the fountain
 At every time stamp,
 1. Generate a random number of particles.
